@@ -1,0 +1,48 @@
+.shoe
+  position: absolute
+  left: 15rem
+  top: 13rem
+
+  & img
+      position: absolute
+      width: 100%
+      height: 100%
+      object-fit: scale-down
+
+.shoe-rotating
+  position: relative
+  width: 53rem
+  height: 25rem
+
+.paralax-background
+  position: absolute
+  z-index: 3
+  top: 0
+  left: 0
+  opacity: 100%
+  width: 100%
+  height: 100%
+
+@media screen and (max-width: 1300px)
+  .shoe-rotating
+    width: 37rem
+    height: 17rem
+
+@media screen and (max-width: 1000px)
+  .shoe
+    left: 9rem
+    top: 9rem
+
+  .shoe-rotating
+    width: 24rem
+    height: 11rem
+
+@media screen and (max-width: 670px)
+  .shoe
+    left: 4.5rem
+    top: 4rem
+
+
+  .shoe-rotating
+    width: 12rem
+    height: 5rem

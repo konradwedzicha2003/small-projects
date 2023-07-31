@@ -1,0 +1,33 @@
+.icons
+
+  &__box
+    display: flex
+    align-items: center
+    cursor: pointer
+    margin: 0 1rem
+
+    & img
+      width: 1.2rem
+      height: 1.2rem
+      vertical-align: top
+
+    & span
+      display: none
+
+.search
+  display: flex
+  align-items: center
+
+.hidden
+  display: none
+
+.search-expand-animation
+  animation: 1s searchExpand both
+
+@media screen and (max-width: 1400px)
+  .icons
+
+    & span
+      margin-left: 1rem
+      display: block
+

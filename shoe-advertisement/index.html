@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shoe advertisement</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-xxl navbar-white bg-white">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">STORE</a>
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse collapse navbar--parent" id="navbarsExample03" style="">
+            <ul class="navbar-nav mb-2 mb-xl-0">
+                <li class="nav-item navbar__location">
+                    <a href="#">
+                        <div class="icons__box">
+                            <img src="assests/location.png" alt="">
+                        </div>
+                        New York
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Contact</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Resources</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Pricing</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="navbar-nav mb-2 mb-xl-0 icons">
+                <form id="search" class="search hidden" role="search">
+                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                </form>
+                <li id="searchIcon" class="nav-item icons__box">
+                    <img src="assests/loupe.png" alt="">
+                </li>
+                <li class="nav-item icons__box">
+                    <img src="assests/profile.png" alt="">
+                    <span>Profile</span>
+                </li>
+                <li class="nav-item icons__box">
+                    <img src="assests/shopping-cart.png" alt="">
+                    <span>Shopping-cart</span>
+                </li>
+
+            </ul>
+            <a href="#" class="nav-button">
+                Log In
+            </a>
+            <a href="#" class="nav-button">
+                Get started
+            </a>
+        </div>
+    </div>
+</nav>
+<main class="main-content">
+    <div class="product-box">
+        <header class="main-content-header">
+            <p>Nike Air Max 270 Men's shoes</p>
+            <div class="main-content-header__background"></div>
+        </header>
+        <div class="shoe-background">
+            <img class="shoe-background__img" src="assests/shoe-background.jpg" alt="">
+            <div class="shoe">
+                <div class="shoe-rotating">
+                    <img class="shoe__img" src="assests/shoe.png" alt="">
+                </div>
+            </div>
+            <div class="paralax-background"></div>
+        </div>
+    </div>
+    <button class=" btn slider-btn slider-btn__left">
+        <img src="assests/left-arrow.png" alt="">
+    </button>
+    <button class="btn slider-btn slider-btn__right">
+        <img src="assests/right-arrow.png" alt="">
+    </button>
+    <button class="btn slider-btn slider-btn__down">
+        <img src="assests/arrow-down.png" alt="">
+    </button>
+
+    <div class="main-content-left-side">
+        <div class="price">$129.99</div>
+        <select class="function-button size-select">
+            <optgroup label="Rozmiar">
+                <option class="size-select__option">S</option>
+                <option class="size-select__option">M</option>
+                <option class="size-select__option">L</option>
+                <option class="size-select__option">XL</option>
+                <option class="size-select__option">XXL</option>
+            </optgroup>
+        </select>
+        <button class="function-button function-button__first">
+            <img src="assests/shopping-cart.png" alt="#">
+            <div class="function-button__inner">
+            <p>Add to bag</p>
+            </div>
+        </button>
+        <button class="function-button function-button__second">
+            <img src="assests/heart.png" alt="#">
+            <div class="function-button__inner">
+            <p>Favourite</p>
+            </div>
+        </button>
+    </div>
+    <div class="main-content-rating">
+        <div class="review-video">
+            <div class="review-video__main-circle">
+                <div class="review-video__circle-caption">
+                    <p class="ch1">W</p>
+                    <p class="ch2">a</p>
+                    <p class="ch3">t</p>
+                    <p class="ch4">c</p>
+                    <p class="ch5">h</p>
+                    <p class="ch6">V</p>
+                    <p class="ch7">i</p>
+                    <p class="ch8">d</p>
+                    <p class="ch9">e</p>
+                    <p class="ch10">o</p>
+                </div>
+                <img class="review-video__play-button" src="assests/play-button.png" alt="#">
+                <div class="review-video__inside-circle"></div>
+                <div class="review-video__smallest-circle"></div>
+            </div>
+        </div>
+        <div class="connecting-line"></div>
+        <div class="rating-score">
+            <p class="rating-score__number">4,97</p>
+            <p class="rating-score__caption">Highly Rated Reviews</p>
+        </div>
+    </div>
+    <footer class="main-content-footer">
+        <div class="shoe-features">
+            <div class="shoe-features__box">
+                <img class="shoe-features__img shoe-features__img--first" src="assests/shoe-feature.jpg" alt="#">
+            </div>
+            <div class="shoe-features__box">
+                <img class="shoe-features__img shoe-features__img--second" src="assests/shoe-feature.jpg" alt="#">
+            </div>
+            <div class="shoe-features__box">
+                <img class="shoe-features__img shoe-features__img--third" src="assests/shoe-feature.jpg" alt="#">
+            </div>
+
+        </div>
+        <div class="shipping-and-returns">
+            <div class="icons__box">
+                <img src="assests/shopping-bag.png" alt="#">
+            </div>
+            Free Shipping & Returns
+        </div>
+    </footer>
+</main>
+
+<script src="scripts.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+</html>

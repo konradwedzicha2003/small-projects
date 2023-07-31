@@ -1,0 +1,32 @@
+.shoe-features
+  position: absolute
+  display: flex
+  top: 45rem
+  left: 8rem
+  height: 7rem
+  min-width: 17rem
+
+  &__box
+    position: relative
+
+  &__img
+    position: absolute
+    border-radius: 10rem
+    width: 7rem
+    height: 7rem
+    box-shadow: 0.4rem 0 0 rgba(255,255,255,0.4)
+
+    &--first
+      z-index: 3
+
+    &--second
+      z-index: 2
+      left: 5rem
+
+    &--third
+      z-index: 1
+      left: 10rem
+
+@media screen and (max-width: 1300px)
+  .shoe-features
+    position: static

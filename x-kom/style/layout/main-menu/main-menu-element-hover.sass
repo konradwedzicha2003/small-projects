@@ -1,0 +1,33 @@
+.main-menu-element-hover-left
+  display: none
+  position: absolute
+  top: 101%
+  left: 0
+  border-radius: 0 10px 10px 10px
+  height: 450px
+  box-shadow: rgba(0, 0, 0, 0.64) 0 4px 7px -3px
+  width: 660px
+  background-color: white
+  z-index: 3
+
+.main-menu-element-hover-right
+  display: none
+  position: absolute
+  top: 101%
+  right: 0
+  border-radius: 10px 0 10px 10px
+  height: 450px
+  box-shadow: rgba(0, 0, 0, 0.64) 0 4px 7px -3px
+  width: 660px
+
+.main-menu-element-hover-box
+  position: relative
+
+.main-menu-element:hover
+  .main-menu-element-hover-left, .main-menu-element-hover-right
+    display: block
+    background-color: white
+
+  background-color: white
+  border-radius: 10px 10px 0 0
+  box-shadow: rgba(0, 0, 0, 0.64) 0 0 8px -3px

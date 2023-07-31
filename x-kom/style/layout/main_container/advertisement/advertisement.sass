@@ -1,0 +1,30 @@
+@import "advertisement_arrows"
+@import "advertisement_nav"
+@import "advertisement_nav_hover"
+@import "advertisement_right-panel"
+@import "advertisement_right_panel-hover"
+
+.advertisement_container
+  display: flex
+  justify-content: center
+  margin-top: 134px
+  width: 100%
+  position: relative
+
+.advertisement_box
+  width: 1444px
+  height: 310px
+
+
+.advertisement_img
+  position: absolute
+  object-fit: cover
+  width: 100%
+  height: 100%
+  border-radius: 25px
+  cursor: pointer
+
+@media all and (max-width: 768px)
+  .advertisement_container
+    margin-top: 0
+

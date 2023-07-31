@@ -1,0 +1,89 @@
+@import "variables/variables"
+@import "mixins/mixins"
+
+.main-container
+  width: 100%
+  min-height: 50rem
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-wrap: wrap
+
+.tag-box
+  min-height: 8rem
+  max-width: 24rem
+  min-width: 14rem
+  box-shadow: 0 0 1rem $black
+  margin: 0 2rem
+  border-radius: 2rem
+
+  &__inner
+    display: flex
+    justify-content: space-evenly
+    flex-wrap: wrap
+    margin: 1rem
+    height: 100%
+
+.tag
+  @include tag
+  justify-content: center
+
+  &--selected
+    box-shadow: 0 0 0.3rem $blue
+
+.selected-tags-list
+  box-shadow: 0 0 1rem $black
+  margin: 0 2rem
+  border-radius: 2rem
+  min-height: 4rem
+  max-width: 24rem
+  font-size: 1.6rem
+  font-weight: 700
+
+  &__inner
+    margin: 1rem
+
+.selected-tags-list-element
+  @include tag
+  justify-content: space-between
+  font-size: 1rem
+  width: max-content
+
+  &__inner
+    display: flex
+    justify-content: center
+    align-items: center
+    margin: 0.5rem
+
+.hidden
+  display: none
+
+
+.remove-img
+  width: 0.8rem
+  height: 0.8rem
+  margin: 0 0.2rem
+
+.search
+
+  &__input
+      border-radius: 2rem
+      min-width: 7rem
+      min-height: 2rem
+      padding: 0.5rem
+
+.number-of-selected-tags
+  text-align: center
+  width: 7rem
+  height: 2rem
+  background: $red
+  border-radius: 4rem 0 4rem 0
+
+.show-more-or-less
+  @include tag
+  width: 6rem
+  justify-content: center
+  background: $gray
+
+  &--hidden
+    display: none

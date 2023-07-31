@@ -1,0 +1,78 @@
+.slider-btn
+  position: absolute
+  z-index: 2
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 5rem
+  height: 5rem
+  border-radius: 10rem
+  box-shadow: 0 0 0.1rem gray
+
+  & img
+    width: 2rem
+    height: 2rem
+
+  &__left
+    top: 4rem
+    left: 8rem
+
+    & img
+      margin-right: 0.4rem
+
+  &__right
+    top: 4rem
+    right: 8rem
+
+    & img
+      margin-left: 0.4rem
+
+  &__down
+    top: 48rem
+    left: 57rem
+
+@media screen and (max-width: 1600px)
+  .slider-btn
+
+    &__down
+      left: 45rem
+
+@media screen and (max-width: 1300px)
+  .slider-btn
+
+    &__down
+      margin: -4rem 0 2rem 0
+      position: static
+
+@media screen and (max-width: 1000px)
+  .slider-btn
+    width: 2.5rem
+    height: 2.5rem
+
+    & img
+      width: 1.5rem
+      height: 1.5rem
+      margin: 0
+
+@media screen and (max-width: 750px)
+  .slider-btn
+
+    &__left
+      left: 1rem
+
+    &__right
+      right: 1rem
+
+@media screen and (max-width: 670px)
+  .slider-btn
+
+    &__left
+      left: 1rem
+      top: 9rem
+
+    &__right
+      right: 1rem
+      top: 9rem
+
+    &__down
+      margin-top: 2rem

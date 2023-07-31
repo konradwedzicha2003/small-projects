@@ -1,0 +1,36 @@
+.function-button
+  position: relative
+  display: flex
+  align-items: center
+  margin: 1rem 0
+  width: 16rem
+  height: 4rem
+  border-radius: 2rem
+
+  &__inner
+    position: absolute
+    width: 100%
+    height: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+
+    & p
+      margin: 0
+
+  & img
+    width: 1.5rem
+    height: 1.5rem
+    margin-left: 2rem
+
+  &__first
+    background: #212121
+    color: white
+
+  &__second
+    background: white
+    color: black
+
+@media screen and (max-width: 1600px)
+  .function-button
+    margin: 1rem

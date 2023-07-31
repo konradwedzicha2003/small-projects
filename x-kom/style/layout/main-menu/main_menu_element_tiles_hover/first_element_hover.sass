@@ -1,0 +1,102 @@
+@mixin main_menu_double_hover_mixin
+  display: none
+  position: absolute
+  left: 100%
+  top: 0
+
+.main_menu_double_hover
+  @include main_menu_double_hover_mixin
+
+.double_hover_all_button
+  padding-right: 20px
+  opacity: 70%
+  display: flex
+  justify-content: space-between
+  align-items: center
+  height: 24px
+  font-size: 14px
+  margin-bottom: 2px
+
+.double_hover_all_button:hover
+  cursor: pointer
+
+.recommended_first_hover:hover .recommended_hover_box
+  display: block
+
+.first_element_hover_laptops_notebooks:hover .laptops_notebooks_hover_box
+  display: block
+
+.first_element_hover_laptops_2in1:hover .laptops_2in1_hover_box
+  display: block
+
+.first_element_hover_computers:hover .computers_hover_box
+  display: block
+
+.first_element_hover_g4m3r_computers:hover .g4m3r_computers_hover_box
+  display: block
+
+.first_element_hover_servers_storage:hover .servers_storage_hover_box
+  display: block
+
+.first_element_hover_programs:hover .programs_hover_box
+  display: block
+
+.first_element_hover_bags_etui:hover .bags_etui_hover_box
+  display: block
+
+.first_element_hover_laptop_accessories:hover .laptop_accessories_hover_box
+  display: block
+
+.first_element_hover_computer_accessories:hover .computer_accessories_hover_box
+  display: block
+
+
+
+
+.recommended_hover_box
+  padding-left: 25px
+
+.double_hover_box_p
+  padding: 1px 5px 7px 25px
+  display: flex
+  justify-content: space-between
+  align-items: center
+  height: 24px
+  font-size: 14px
+  margin-bottom: 2px
+  font-weight: bolder
+  color: #4d4d4d
+
+.double_hover_header
+  display: flex
+  justify-content: space-between
+  width: 380px
+
+.laptops_2in1_hover_box, .g4m3r_computers_hover_box, .computer_accessories_hover_box, .laptop_accessories_hover_box, .bags_etui_hover_box, .programs_hover_box, .servers_storage_hover_box, .computers_hover_box, .laptops_notebooks_hover_box
+  width: 380px
+  height: 100%
+
+.double_hover_side_button
+  margin-top: 5px
+  width: 300px
+  border-radius: 30px
+  height: 36px
+  display: flex
+  align-items: center
+  justify-content: center
+  background-color: white
+  border: 1px solid black
+  color: #4d4d4d
+  cursor: pointer
+
+.double_hover_side_button:hover
+  color: black
+
+.double_hover_box_buttons
+  display: flex
+  align-items: center
+  flex-direction: column
+
+
+
+

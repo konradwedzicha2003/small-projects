@@ -1,0 +1,22 @@
+@import "function-button"
+@import "size-select"
+@import "price"
+
+.main-content-left-side
+  position: absolute
+  z-index: 4
+  display: flex
+  flex-direction: column
+  top: 13rem
+  left: 8rem
+
+@media screen and (max-width: 1600px)
+  .main-content-left-side
+    position: static
+    flex-direction: row
+    justify-content: center
+    flex-wrap: wrap
+
+@media screen and (max-width: 670px)
+  .main-content-left-side
+    margin-top: -1rem

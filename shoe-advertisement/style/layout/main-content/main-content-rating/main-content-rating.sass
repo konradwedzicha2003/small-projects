@@ -1,0 +1,25 @@
+@import "rating-score"
+@import "connecting-line"
+@import "review-video"
+
+.main-content-rating
+  position: absolute
+  z-index: 4
+  display: flex
+  top: 13rem
+  right: 8rem
+
+@media screen and (max-width: 1800px)
+  .main-content-rating
+    flex-direction: column
+    right: 4rem
+
+@media screen and (max-width: 1600px)
+  .main-content-rating
+    position: static
+    margin: 8rem 0
+    flex-direction: row
+
+@media screen and (max-width: 670px)
+  .main-content-rating
+    flex-direction: column

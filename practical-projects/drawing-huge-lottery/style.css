@@ -1,0 +1,27 @@
+.container {
+  position: relative;
+}
+
+.btn {
+  position: absolute;
+  width: 100px;
+  height: 40px;
+  background-color: aqua;
+  top: 100px;
+  left: 10px;
+  border-radius: 20px;
+  border: 0;
+}
+
+.output {
+  position: absolute;
+  width: 200px;
+  height: 40px;
+  background-color: chartreuse;
+  top:100px;
+  left: 140px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

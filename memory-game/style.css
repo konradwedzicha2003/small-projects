@@ -1,0 +1,49 @@
+@keyframes unfold {
+  from {
+    transform: none;
+  }
+  to {
+    transform: matrix3d(1, 0, 2, 0, 0, 1, 2, 0, 1, 1, 1, 0, 1, 0, 1, 1);
+  }
+}
+.main-container {
+  display: flex;
+  margin: auto;
+  width: auto;
+  justify-content: center;
+  padding-top: 4rem;
+}
+
+.grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1px solid black;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.gridRow {
+  display: flex;
+}
+
+.gridUnfolded {
+  animation-name: unfold;
+  animation-duration: 0.8s;
+}
+
+.gridDisplayNone {
+  display: none;
+}
+
+.matchedNumbersColor {
+  background-color: greenyellow;
+}
+
+.wrongMatches {
+  margin: 2rem;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,28 @@
+@import "shoe"
+@import "shoe-background"
+
+.product-box
+  position: absolute
+  left: 20rem
+  width: 80rem
+  height: 60rem
+
+@media screen and (max-width: 1600px)
+  .product-box
+    position: relative
+    left: 0
+
+@media screen and (max-width: 1300px)
+  .product-box
+    width: 60rem
+    height: 45rem
+
+@media screen and (max-width: 1000px)
+  .product-box
+    width: 40rem
+    height: 30rem
+
+@media screen and (max-width: 670px)
+  .product-box
+    width: 20rem
+    height: 15rem

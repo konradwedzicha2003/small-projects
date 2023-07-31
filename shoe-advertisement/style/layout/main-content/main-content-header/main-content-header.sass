@@ -1,0 +1,68 @@
+.main-content-header
+  position: absolute
+  display: flex
+  justify-content: center
+  z-index: 2
+  left: 0
+  top: 0
+  width: 100%
+  font-size: 5rem
+  font-weight: 700
+
+  & p
+    max-width: 41rem
+    text-align: center
+
+  &__background
+    position: absolute
+    left: 30rem
+    top: 0.6rem
+
+
+    &:before
+      content: ""
+      position: absolute
+      z-index: -1
+      border-right: 21rem solid beige
+      border-left: 1rem solid transparent
+      border-top: 2rem solid transparent
+      border-bottom: 3rem solid beige
+      top: 0
+      left: 0
+
+    &:after
+      content: ""
+      position: absolute
+      z-index: -2
+      border-right: 1rem solid transparent
+      border-left: 21rem solid beige
+      border-top: 1rem solid transparent
+      border-bottom: 2.5rem solid transparent
+      top: 4rem
+
+@media screen and (max-width: 1300px)
+  .main-content-header
+    display: flex
+    justify-content: center
+
+    &__background
+      display: none
+
+    & p
+      max-width: 35rem
+      font-size: 4rem
+
+@media screen and (max-width: 1000px)
+  .main-content-header
+
+    & p
+      max-width: 25rem
+      font-size: 2.5rem
+
+@media screen and (max-width: 670px)
+  .main-content-header
+
+    & p
+      font-size: 1.5rem
+      position: static
+

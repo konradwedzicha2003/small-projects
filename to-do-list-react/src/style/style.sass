@@ -1,0 +1,95 @@
+@import "variables"
+@import "mixins"
+
+.container
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    flex-direction: column
+    border: 0.1rem solid $black
+    max-height: 60rem
+    overflow-x: hidden
+    padding: 0
+
+input
+    height: 1.5rem
+    width: 10rem
+    margin-top: 1rem
+
+header
+    margin-top: 2rem
+
+ol
+    margin-top: 1rem
+    padding: 0
+
+    li
+        @include flex-between-center
+        border: 1px solid $black
+        list-style: none
+        padding: 0.4rem
+        margin: 0.3rem
+        max-width: 30rem
+        min-width: 12rem
+
+button
+    margin-top: 1rem
+
+.remove-task
+    position: relative
+    margin: 0 0.2rem
+    padding: 0.6rem 1.5rem 0.7rem 0
+    cursor: pointer
+    width: max-content
+    height: max-content
+
+    &__line
+        position: absolute
+        width: 1.4rem
+        height: 0.1rem
+        background: $black
+        z-index: -1
+
+        &--line-up
+            transform: rotate(45deg)
+
+        &--line-down
+            transform: rotate(-45deg)
+
+.order
+    margin: 0 0.5rem
+
+.functional-buttons
+    display: flex
+    align-items: center
+
+.change-order-buttons
+    display: flex
+    align-items: center
+    flex-direction: column
+    width: 2rem
+
+.arrow
+    width: 0
+    height: 0
+    appearance: none
+    background: $white
+    background: transparent
+    cursor: pointer
+
+    &__up
+        margin-top: 0.4rem
+        border-top: 0.4rem solid $black
+        border-right: 0.6rem solid transparent
+        border-bottom: 0.6rem solid transparent
+        border-left: 0.4rem solid $black
+        transform: rotate(45deg)
+
+    &__down
+        margin-bottom: 0.4rem
+        border-top: 0.4rem solid $black
+        border-right: 0.6rem solid transparent
+        border-bottom: 0.6rem solid transparent
+        border-left: 0.4rem solid $black
+        transform: rotate(225deg)
+

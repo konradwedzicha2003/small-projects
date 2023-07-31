@@ -1,0 +1,48 @@
+@import "icons"
+@import "nav-button"
+
+.navbar
+  height: 9rem
+  font-weight: 700
+
+  &-nav
+    margin-right: 4rem
+
+  &-brand
+    margin: 0 3rem
+    font-size: 2.5rem
+
+  &__location
+    display: flex
+    text-decoration: none
+    align-items: center
+
+    & a
+      display: flex
+      text-decoration: none
+      align-items: center
+      color: black
+      min-width: 8rem
+
+      & .icons__box
+          display: flex
+          align-items: center
+          margin: 0 1rem 0 0
+
+  &--parent
+    z-index: 6
+    background: white
+    justify-content: space-between
+
+.nav-item
+  margin: 1rem
+
+@media screen and (max-width: 1500px)
+  .navbar
+
+    &-nav
+      margin-right: 0
+
+    &-brand
+      margin: 0 0.5rem
+
